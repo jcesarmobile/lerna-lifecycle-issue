@@ -5,8 +5,8 @@
   ],
   "scripts": {
     "release": "lerna publish --yes --loglevel silly --skip-npm",
-    "version": "exit 200",
-    "postversion": "exit 300"
+    "version": "echo \"version!\"",
+    "postversion": "echo \"postversion!\" && exit 1"
   },
   "devDependencies": {
     "lerna": "^3.0.0-alpha.0"
