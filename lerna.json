@@ -1,8 +1,13 @@
 {
   "lerna": "2.8.0",
+  "lifecycle": {
+    "version": "bash scripts/setversion.sh",
+    "pretag": "bash scripts/setversion.sh",
+    "prepublish": "bash scripts/setversion.sh"
+  },
   "packages": [
     "packages/*"
   ],
-  "version": "1.0.11",
+  "version": "1.0.12",
   "registry": "https://registry.npmjs.org/"
 }
